@@ -2,6 +2,7 @@
 #at one point, i'd love to have it randomly generate a starting room
 
 #should try and understand while loops more, that'll probably help
+#testing something new here to see if Git uploads it yay
 
 def Labyrinth():
     print("Hello. You are trapped in a maze. Can you find the way out?")
