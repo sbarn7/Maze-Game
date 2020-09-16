@@ -2,7 +2,6 @@
 #at one point, i'd love to have it randomly generate a starting room
 
 #should try and understand while loops more, that'll probably help
-#testing new change for Git 
 
 def Labyrinth():
     print("Hello. You are trapped in a maze. Can you find the way out?")
@@ -10,16 +9,35 @@ def Labyrinth():
     print("Let us begin . . .")
 
 Labyrinth()
+#remember that random insult generator you came up with? You should include that so that each time you enter a room it tells you something different
+#i think its something about you creating the list and then randomly pulling from that list
 
 def FirstMove():
-#User in Room5
-    print("You are in the middle of a maze, trapped in a room. You look around the room. Which wall would you like to investigate?")
-    Wall1 = input("North, East, South, or West? ")
-    if Wall1 == "North":
-        print("Excellent. You chose North. There is a door.")
-        Door1 = input("Would you like to go through the door? Y/N ")
-        if Door1 == "Yes": #North
-            print("You enter another room.")
+    print("You are in the middle of a maze, trapped in a room. You look around the room. \n On the North wall, there is a door. \n On the East wall, there is no door. \n On the South wall, there is a door. \n On the West wall, there is a door.")
+    Door1 = input("Which door would you like to enter: North, South, or West? ")
+    #count_1 = 0
+    #count_1 += 1
+    #count_1 += 1
+    #count_1 += 1
+    #count_1 += 1
+    #count_1 += 1 #so this works and the function stops, but how to incorporate this into the rest of the function?
+    #if count_1 >= 5:
+    #    return
+    #print(string.count("Room5")) #Can't figure this out
+
+    if Door1 == "North":
+        print("Excellent. You chose North.")
+        def North1():
+            print("You enter a new room. You look around the room. \n On the North wall, there is no door. \n On the East wall, there is a door. \n On the South wall, there is a door. \n On the West wall, there is no door.")
+            Door2 = input("Which door would you like to enter: East or South?")
+            #string = "Room4"
+            #print(string.count("Room4"))
+        #Door1 = input("Would you like to go through the door? Y/N ")
+        #if Door1 == "Yes": #North
+        #    print("You enter another room.")
+        North1()
+        
+
 #User in Room4
             def SecondMove():
                 print("You look around the new room. Which wall would you like to investigate?")
